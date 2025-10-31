@@ -1,0 +1,30 @@
+.not-found {
+  text-align: center;
+  padding: 20px;
+}
+
+.not-found h2 {
+  font-size: 3rem;
+  /* Esto hace que el tamaño de la letra sea más grande */
+  color: #d9534f;
+  /* Un color rojo para el título */
+}
+
+.not-found p {
+  font-size: 1.5rem;
+  /* Puedes ajustar el tamaño del texto aquí */
+  color: #5bc0de;
+  /* Un color azul para el texto */
+}
+
+.not-found a {
+  font-size: 1.25rem;
+  color: #0275d8;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.not-found a:hover {
+  text-decoration: underline;
+}

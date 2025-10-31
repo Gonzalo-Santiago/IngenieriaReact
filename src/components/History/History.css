@@ -1,0 +1,84 @@
+/* ==== Contenedor principal ==== */
+.historial-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ==== Título ==== */
+.historial-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* ==== Lista ==== */
+.historial-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ==== Elementos individuales ==== */
+.historial-container li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--item-bg);
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.historial-container li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* ==== Texto de tarea ==== */
+.historial-container li span:first-child {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    flex-grow: 1;
+}
+
+/* ==== Fecha ==== */
+.historial-container .fecha {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-left: 15px;
+    white-space: nowrap;
+}
+
+/* ==== Texto cuando no hay tareas ==== */
+.historial-container p {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-top: 15px;
+}
+
+/* ==== Variables modo claro ==== */
+.light {
+    --bg-color: #ffffff;
+    --item-bg: #f9f9f9;
+    --text-primary: #222;
+    --text-secondary: #777;
+}
+
+/* ==== Variables modo oscuro ==== */
+.dark {
+    --bg-color: #1e1e1e;
+    --item-bg: #2b2b2b;
+    --text-primary: #f5f5f5;
+    --text-secondary: #b0b0b0;
+}
